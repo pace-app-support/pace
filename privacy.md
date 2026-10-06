@@ -1,8 +1,8 @@
 # PACE — Privacy Policy
 
-**Last updated:** [DATE]
+**Last updated:** 7/10/26
 
-This Privacy Policy explains how PACE ("we", "us", "our") handles your
+This Privacy Policy explains how PACE handles your
 information when you use the PACE mobile application ("the App").
 
 We are based in Australia. We handle personal information in accordance
