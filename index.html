@@ -14,9 +14,20 @@
   .updated { color: #666; margin-top: 0; }
   ul { padding-left: 22px; }
   code { background: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
+  .nav { display: flex; gap: 8px; margin-bottom: 32px; }
+  .nav a { display: inline-block; padding: 9px 18px; border-radius: 999px;
+           font-size: 14px; font-weight: 600; text-decoration: none;
+           color: #0a7d4f; background: #f0f7f3; border: 1px solid #d8e8e0; }
+  .nav a.active { color: #fff; background: #0a7d4f; border-color: #0a7d4f; }
+  .nav a:not(.active):hover { border-color: #0a7d4f; }
 </style>
 </head>
 <body>
+
+<nav class="nav">
+  <a href="./" class="active">Privacy Policy</a>
+  <a href="index1.html">Support</a>
+</nav>
 
 <h1>PACE — Privacy Policy</h1>
 <p class="updated"><strong>Last updated:</strong> 7th of October 2026</p>
@@ -35,7 +46,8 @@ the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs)
 <ul>
   <li><strong>Account identity.</strong> When you sign in with Apple, Apple shares a
   unique user identifier and, on first sign-in only, your name and email address.
-  You may hide your email using Apple's private relay.</li>
+  You may hide your email using Apple's private relay. If you sign in with Google,
+  Google shares your account identifier and email address.</li>
   <li><strong>Profile information.</strong> Display name, username, bio, training goal,
   experience level, weekly training distance, and any social links you add
   (YouTube, Instagram, TikTok, Facebook, Strava).</li>
@@ -107,14 +119,15 @@ Coach.</strong> The rest of the App works without it.</p>
 <h2>5. Who We Share Information With</h2>
 <ul>
   <li><strong>Apple</strong> — for Sign in with Apple, iCloud/CloudKit storage, and App Store purchases and subscriptions.</li>
-  <li><strong>Google</strong> — for the AI Coach, as described in Section 4.</li>
+  <li><strong>Google</strong> — for Google sign-in, and for the AI Coach as described in Section 4.</li>
+  <li><strong>Supabase</strong> — for account authentication. Supabase stores your account identifier and email address on our behalf.</li>
 </ul>
 <p>We may also disclose information where required by law.</p>
 
 <h2>6. Storage, Security and Retention</h2>
 <p><strong>Where data is stored.</strong> Your training data is stored locally on your device.
-Your community profile is stored in Apple's CloudKit public database, which may be hosted on
-servers outside Australia.</p>
+Your account credentials are held by Supabase on our behalf. Your community profile is
+stored in Apple's CloudKit public database. These services may host data on servers outside Australia.</p>
 <p><strong>How we protect it.</strong> Data in transit is encrypted using HTTPS/TLS. CloudKit
 storage is protected by Apple's infrastructure. No method of transmission or storage is
 completely secure, so we cannot guarantee absolute security.</p>
